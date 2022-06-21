@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            overflow: hidden;
+            height: 100%
+        }
+    
+        body {
+            /* 视差元素的父级需要3D视角 */
+            perspective: 1px;
+            /* transform-style: preserve-3d;  */
+            height: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        #app{
+            width: 100vw;
+            height:300vh;
+            background:skyblue;
+            padding-top:100px;
+        }
+        .one{
+            width:500px;
+            height:300px;
+            /* background:#409eff; */
+            background-image: url(https://images.pexels.com/photos/1097491/pexels-photo-1097491.jpeg);
+            background-size: cover;
+            background-position: center center;
+            transform: translateZ(-1px);
+            margin-bottom: 50px;
+        }
+        .two{
+            width:500px;
+            height:300px;
+            /* background:#67c23a; */
+            background-image: url(https://images.pexels.com/photos/2437299/pexels-photo-2437299.jpeg);
+            background-size: cover;
+            background-position: center center;
+            transform: translateZ(-2px);
+            margin-bottom: 150px;
+        }
+        .three{
+            width:500px;
+            height:300px;
+            /* background:#e6a23c;
+             */
+            background-image: url(https://images.pexels.com/photos/1005417/pexels-photo-1005417.jpeg);
+            background-position: center center;
+            background-size: cover;
+            transform: translateZ(-3px);
+            margin-bottom: 150px;
+        }
+        .four{
+            width:500px;
+            height:300px;
+            /* background:#67c23a; */
+            background-image: url(https://images.pexels.com/photos/2437299/pexels-photo-2437299.jpeg);
+            background-size: cover;
+            background-position: center center;
+            transform: translateZ(-2px);
+            margin-bottom: 150px;
+        }
+        .five{
+            width:500px;
+            height:300px;
+            /* background:#409eff; */
+            background-image: url(https://images.pexels.com/photos/1097491/pexels-photo-1097491.jpeg);
+            background-size: cover;
+            background-position: center center;
+            transform: translateZ(-1px);
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+        <div class="four">four</div>
+        <div class="five">five</div>
+    </div>
+</body>
+
+</html>
